@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PrepperDb</title>
+    <title>Prepper DB</title>
     <%= csrf_meta_tags %>
-
+    <meta charset="utf-8">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//cdn.muicss.com/mui-0.9.35/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.35/js/mui.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </head>
-
   <body>
-    <%= yield %>
+    <div id="header" class="mui-appbar">
+      <table>
+        <tr class="mui--appbar-height">
+          <td>
+            <a href="http://localhost:3000/">home</a>
+          </td>
+          <td style="padding: 0 auto; width:100%">
+            <h1 style="text-align: center;">Prepper DB</h1>
+          </td>
+          <td>
+            <div class="mui-dropdown">
+              <button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown">
+                nav
+              </button>
+              <ul class="mui-dropdown__menu">
+                <li><a href="http://localhost:3000/products">Products</a></li>
+                <li><a href="http://localhost:3000/productgroups">Productgroups</a></li>
+                <li><a href="http://localhost:3000/manufacturers">Manufacturers</a></li>
+                <li><a href="http://localhost:3000/storage_locations">Storage-Locations</a></li>
+                <li><a href="http://localhost:3000/entities">Entities</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="content">
+      <%= yield %>
+    </div>
   </body>
 </html>
