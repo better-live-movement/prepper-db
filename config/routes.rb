@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :entities
   resources :products
   resources :storage_locations
   resources :productgroups

@@ -1,0 +1,32 @@
+<%= form_with(model: entity, local: true) do |form| %>
+  <% if entity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+
+      <ul>
+      <% entity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :product_id %>
+    <%= form.number_field :product_id, id: :entity_product_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :best_before_date %>
+    <%= form.date_select :best_before_date, id: :entity_best_before_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :storage_location_id %>
+    <%= form.number_field :storage_location_id, id: :entity_storage_location_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
