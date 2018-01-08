@@ -1,0 +1,63 @@
+#+TITLE: Tis are just some notes to update the readme someday
+ruby 2.4.3
+Rails 5.1.4
+
+```
+bundle && yarn
+```
+
+```
+error react-webpack-rails-tutorial@0.0.1: The engine "node" is incompatible with this module. Expected version "6.9.0".
+```
+
+```
+$ gem install foreman
+```
+
+```
+foreman start -f Procfile.dev
+```
+
+```
+$ rails generate react_on_rails:install
+Running via Spring preloader in process 10808
+       route  get 'hello_world', to: 'hello_world#index'
+      append  .gitignore
+     prepend  app/assets/javascripts/application.js
+        gsub  app/assets/javascripts/application.js
+      create  client/app/bundles/HelloWorld/components
+      create  client/app/bundles/HelloWorld/containers
+      create  client/app/bundles/HelloWorld/startup
+      create  app/controllers/hello_world_controller.rb
+      create  client/.babelrc
+      create  client/webpack.config.js
+      create  client/REACT_ON_RAILS_CLIENT_README.md
+      create  config/initializers/react_on_rails.rb
+      create  Procfile.dev
+    conflict  package.json
+Overwrite /home/melchior/projects/blm/prepper-db/package.json? (enter "h" for help) [Ynaqdh]
+       force  package.json
+      create  client/package.json
+      append  Gemfile
+      append  config/initializers/assets.rb
+      create  client/app/bundles/HelloWorld/components/HelloWorld.jsx
+      create  client/app/bundles/HelloWorld/startup/registration.jsx
+      create  app/views/hello_world/index.html.erb
+Did not find spec/rails_helper.rb or spec/spec_helper.rb to add
+  # Ensure that if we are running js tests, we are using latest webpack assets
+  # This will use the defaults of :js and :server_rendering meta tags
+  ReactOnRails::TestHelper.configure_rspec_to_compile_assets(config)
+
+
+What to do next:
+
+  - Ensure your bundle and yarn installs of dependencies are up to date.
+
+      bundle && yarn
+
+  - Run the foreman command to start the rails server and run webpack in watch mode.
+
+      foreman start -f Procfile.dev
+
+  - Visit http://localhost:3000/hello_world and see your React On Rails app running!
+```

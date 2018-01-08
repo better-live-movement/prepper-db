@@ -91,4 +91,9 @@ company-statistics-cache.el
 # anaconda-mode
 anaconda-mode/
 
-# End of https://www.gitignore.io/api/emacs
+# End of https://www.gitignore.io/api/emacs# React on Rails
+npm-debug.log*
+node_modules
+
+# Generated js bundles
+/app/assets/webpack/*
