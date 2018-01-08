@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Productgroups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Food group</th>
+      <th>Min weight</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @productgroups.each do |productgroup| %>
+      <tr>
+        <td><%= productgroup.name %></td>
+        <td><%= productgroup.description %></td>
+        <td><%= productgroup.food_group %></td>
+        <td><%= productgroup.min_weight %></td>
+        <td><%= link_to 'Show', productgroup %></td>
+        <td><%= link_to 'Edit', edit_productgroup_path(productgroup) %></td>
+        <td><%= link_to 'Destroy', productgroup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Productgroup', new_productgroup_path %>

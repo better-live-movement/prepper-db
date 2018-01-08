@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @productgroup.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @productgroup.description %>
+</p>
+
+<p>
+  <strong>Food group:</strong>
+  <%= @productgroup.food_group %>
+</p>
+
+<p>
+  <strong>Min weight:</strong>
+  <%= @productgroup.min_weight %>
+</p>
+
+<%= link_to 'Edit', edit_productgroup_path(@productgroup) %> |
+<%= link_to 'Back', productgroups_path %>
