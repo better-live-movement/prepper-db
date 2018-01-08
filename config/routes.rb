@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'site#index'
   resources :entities
   resources :products
   resources :storage_locations
