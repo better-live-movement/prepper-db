@@ -13,7 +13,9 @@
 
   <div class="field">
     <%= form.label :product_id %>
-    <%= form.number_field :product_id, id: :entity_product_id %>
+    <%= form.select :product_id,
+        Product.all.map {|p| [p.name,p.id]},
+        prompt: "please select" %>
   </div>
 
   <div class="field">
@@ -23,7 +25,9 @@
 
   <div class="field">
     <%= form.label :storage_location_id %>
-    <%= form.number_field :storage_location_id, id: :entity_storage_location_id %>
+    <%= form.select :storage_location_id,
+        StorageLocation.all.map {|s| [s.name,s.id]},
+        prompt: "please select" %>
   </div>
 
   <div class="actions">

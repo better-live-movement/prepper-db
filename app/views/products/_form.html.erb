@@ -23,7 +23,9 @@
 
   <div class="field">
     <%= form.label :manufacturer_id %>
-    <%= form.number_field :manufacturer_id, id: :product_manufacturer_id %>
+    <%= form.select :manufacturer_id,
+        Manufacturer.all.map {|m| [m.name,m.id]},
+        prompt: "please select" %>
   </div>
 
   <div class="field">
@@ -38,7 +40,9 @@
 
   <div class="field">
     <%= form.label :productgroup_id %>
-    <%= form.number_field :productgroup_id, id: :product_productgroup_id %>
+    <%= form.select :productgroup_id,
+        Productgroup.all.map {|p| [p.name,p.id]},
+        prompt: "Please select" %>
   </div>
 
   <div class="actions">
