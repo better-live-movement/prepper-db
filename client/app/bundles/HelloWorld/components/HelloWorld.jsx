@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import AppBar from 'material-ui/AppBar';
+import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
 
 export default class HelloWorld extends React.Component {
   static propTypes = {
@@ -22,9 +26,16 @@ export default class HelloWorld extends React.Component {
     this.setState({ name });
   };
 
+  getChildContext() {
+      return { muiTheme: getMuiTheme(baseTheme) };
+  }
+
   render() {
     return (
       <div>
+        <AppBar
+          title="Title"
+        />
         <h3>
           Hello, {this.state.name}!
         </h3>
@@ -43,4 +54,9 @@ export default class HelloWorld extends React.Component {
       </div>
     );
   }
+
 }
+
+HelloWorld.childContextTypes = {
+    muiTheme: React.PropTypes.object.isRequired,
+};
