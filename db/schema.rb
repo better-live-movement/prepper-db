@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180108094428) do
+ActiveRecord::Schema.define(version: 20180111005042) do
 
   create_table "entities", force: :cascade do |t|
     t.integer "product_id"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20180108094428) do
     t.string "name"
     t.string "description"
     t.integer "manufacturer_id"
-    t.integer "barcode"
+    t.string "barcode"
     t.integer "weight"
     t.integer "productgroup_id"
     t.datetime "created_at", null: false
