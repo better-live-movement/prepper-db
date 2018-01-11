@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  manufacturer_id: 1
+  barcode: 1
+  weight: 1
+  productgroup_id: 1
+
+two:
+  name: MyString
+  description: MyString
+  manufacturer_id: 1
+  barcode: 1
+  weight: 1
+  productgroup_id: 1
