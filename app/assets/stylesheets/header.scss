@@ -1,0 +1,63 @@
+
+.site-header {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {
+    text-decoration: none!important;
+  }
+
+  .app-title {
+    padding-left: 10px;
+    font-size: 26px;
+    float: left;
+    line-height: 56px;
+  }
+
+  .app-nav {
+    position:absolute;
+    top:9px;
+    right: 15px;
+    text-align: right;
+    display: block;
+    background-color: #0af;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    .menu-icon {
+      display:block;
+      float:right;
+      width:36px;
+      height:26px;
+      line-height:0;
+      padding-top:10px;
+      text-align:center
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+
+      .nav-link {
+        display: block;
+        padding: 5px 10px;
+        margin-left: 20px;
+      }
+    }
+
+    &:hover {
+      .trigger {
+        display:block;
+        padding-bottom:5px;
+      }
+    }
+
+  }
+
+  background-color: #0af;
+  min-height: 56px;
+  position: relative;
+  display: block;
+}

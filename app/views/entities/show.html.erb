@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @entity.product.name %>
+</p>
+
+<p>
+  <strong>Best before date:</strong>
+  <%= @entity.best_before_date %>
+</p>
+
+<p>
+  <strong>Storage location:</strong>
+  <%= @entity.storage_location.name %>
+</p>
+
+<%= link_to 'Edit', edit_entity_path(@entity) %> |
+<%= link_to 'Back', entities_path %>
