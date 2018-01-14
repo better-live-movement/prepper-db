@@ -27,3 +27,5 @@ rails db:seed
 rails s
 ```
 to start the app
+
+read the [CHANGELOG](https://github.com/better-live-movement/prepper-db/blob/master/CHANGELOG.md) for latest updates
