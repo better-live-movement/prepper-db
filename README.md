@@ -1,24 +1,29 @@
-# README
+# Prepper DB
+This is a app to manage your food stock.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## dependecies
+you need
+- Ruby 2.4.3
+- bundler have to be installed
 
-Things you may want to cover:
+## install
+- clone this repo
+- run
+```
+bundle install
+```
+to install missing dependecies
 
-* Ruby version
+- run
+```
+rails db:migrate
+rails db:seed
+```
+- to initialize the database
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## usage
+- run
+```
+rails s
+```
+to start the app
