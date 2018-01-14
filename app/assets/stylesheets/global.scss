@@ -6,11 +6,27 @@
 
 }
 
+.site-header{
+  z-index: +1;
+}
+
 body {
   margin: 0px;
   padding: 0px;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
 }
 
 #content {
   padding-left: 10px;
+}
+
+@media screen and (min-width: 800px) and (min-width: 800px){
+  body {
+    background-image: url(background_desktop.jpg);
+  }
 }

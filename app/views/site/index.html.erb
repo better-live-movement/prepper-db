@@ -1,2 +1,16 @@
-<button class="mui-btn mui-btn--primary">placeholder</button>
-<button class="mui-btn mui-btn--danger">placeholder</button>
+<div class="mui-dropdown">
+  <button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown">
+    store something
+    <span class="mui-caret"></span>
+  </button>
+  <ul class="mui-dropdown__menu">
+    <li><%= link_to "known product", new_entity_path %></li>
+    <li><%= link_to "add product first", new_product_path %></li>
+  </ul>
+</div>
+<div>
+  <%= link_to "list stock", entities_path, { :class=>"mui-btn" } %>
+</div>
+<div>
+  <%= link_to "take from, stock", entities_path, { :class=>"mui-btn" } %>
+</div>
