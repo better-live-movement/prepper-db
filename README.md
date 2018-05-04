@@ -1,9 +1,11 @@
 # Prepper DB
 This is a app to manage your food stock.
 
+[![Dependency Status](https://beta.gemnasium.com/badges/github.com/better-live-movement/prepper-db.svg)](https://beta.gemnasium.com/projects/github.com/better-live-movement/prepper-db)
+
 ## dependecies
 you need
-- Ruby 2.4.3
+- Ruby 2.5.1
 - bundler have to be installed
 
 ## install
